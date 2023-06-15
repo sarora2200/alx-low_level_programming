@@ -15,4 +15,3 @@ printf("size of a float: %u byte(s)\n", sizeof(float));
 
 return (0);
 }
-
