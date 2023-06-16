@@ -10,11 +10,11 @@
 */
 
 int main(void)
-{ char ch = 'z'
-for (ch = 122; ch >= 'a'; ch--)
+{  char ch = 'z';
+for (ch = 122; ch => 'a'; ch--)
 {
-putchar(ch)
+putchar(ch);
 }
-putchar('\n')
+putchar('\n');
 return (0);
 }
