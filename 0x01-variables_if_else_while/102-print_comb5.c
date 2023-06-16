@@ -20,14 +20,14 @@ for (b = 0; b <= 9; b++)
 {
 for (f = 0; f <= 9; f++)
 {
-if (i + e != b + f && i * 10 + e < b * 10 + f)
+if (i < b || (i == b && e < f))
 {
 putchar(i + 48);
 putchar(e + 48);
 putchar(' ');
 putchar(b + 48);
 putchar(f + 48);
-if (i * 10 + e != 98 || b * 10 + f != 99)
+if (!(i == 9 && e == 8 && b == 9 && f == 9))
 {
 putchar(',');
 putchar(' ');
