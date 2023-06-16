@@ -11,11 +11,11 @@
 
 int main(void)
 { int i = 0;
+int g = 10;
 for (i = 0; i < 10; i++)
 {
 putchar(i + 48);
 }
-int g = 10;
 for  (g = 10; g < 16; g++)
 {
 putchar(g + 87);
