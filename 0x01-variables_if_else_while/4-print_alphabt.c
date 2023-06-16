@@ -4,6 +4,8 @@
 /**
  * main - entry point
  *
+ *Decription: print all alphabet letters except q and e
+ *
  * Return: 0 (success)
 */
 
