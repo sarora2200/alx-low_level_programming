@@ -12,7 +12,7 @@ for (b = 0; b <= 9; b++)
 e = n * b;
 if (b == 0)
 {
-putchar(e + '0');
+_putchar(e + '0');
 }
 if (e < 10 && b != 0)
 {
