@@ -11,13 +11,13 @@ for (b = 0; b <= 9; b++)
 {
 e = n * b;
 if (e <= 9)
-putchar(' ');
+_putchar(' ');
 else
-putchar('0' + (e / 10));
-putchar('0' + (e % 10));
-putchar(',');
-putchar(' ');
+_putchar('0' + (e / 10));
+_putchar('0' + (e % 10));
+_putchar(',');
+_putchar(' ');
 }
-putchar('\n');
+_putchar('\n');
 }
 }
