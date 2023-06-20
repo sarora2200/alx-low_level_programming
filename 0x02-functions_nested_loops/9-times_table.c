@@ -10,17 +10,21 @@ for (n = 0; n <= 9; n++)
 for (b = 0; b <= 9; b++)
 {
 e = n * b;
-if (e <= 9)
+if (b == 0)
 {
-_putchar(' ');
+putchar(e + '0');
 }
-if (b < 9)
+if (e < 10 && b != 0)
 {
 _putchar(',');
 _putchar(' ');
+_putchar(' ');
+_putchar(e + '0');
 }
-else if
+else if (e >= 10)
 {
+_putchar(',');
+_putchar(' ');
 _putchar('0' + (e / 10));
 _putchar('0' + (e % 10));
 }
@@ -28,3 +32,4 @@ _putchar('0' + (e % 10));
 _putchar('\n');
 }
 }
+
