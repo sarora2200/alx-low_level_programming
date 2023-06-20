@@ -5,41 +5,26 @@
  * @n: is input.
 */
 void print_to_98(int n)
-{  int o;
-for (o = 0; o <= 98; o++)
+{  int i, j;
+if (n <= 98)
 {
-if (o < 98)
-printf("%d, ", o);
-else
-printf("%d", o);
-}
-printf("\n");
-printf("98\n");
-int e;
-for (e = 111; e >= 98; e--)
+for (i = n; i <= 98; i++)
 {
-if (e > 98)
-printf("%d, ", e);
-else
-printf("%d", e);
+if (i != 98)
+printf("%d, ", n);
+else if (i == 98)
+printf("%d\n", i);
 }
-printf("\n");
-int b;
-for (b = 81; b <= 98; b++)
+}
+else if (n >= 98)
 {
-if (b < 98)
-printf("%d, ", b);
-else
-printf("%d", b);
-}
-printf("\n");
-int d;
-for (d = -10; d <= 98; d++)
+for (j = n; j >= 98; j--)
 {
-if (d < 98)
-printf("%d, ", d);
-else
-printf("%d", d);
+if (j != 98)
+printf("%d, ", j);
+else if (j == 98)
+printf("%d", j);
 }
-printf("\n");
 }
+}
+
