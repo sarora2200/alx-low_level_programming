@@ -15,7 +15,7 @@ _putchar(' ');
 if (b < 9)
 _putchar(',');
 _putchar(' ');
-else
+else if
 _putchar('0' + (e / 10));
 _putchar('0' + (e % 10));
 }
