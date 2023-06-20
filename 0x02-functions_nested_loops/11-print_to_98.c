@@ -2,19 +2,16 @@
 #include <stdio.h>
 /**
  * print_to_98 - function that prints all natural numbers from n to 98.
- *
- * @n: is input
- *
- * Return: (0) is success.
+ * @n: is input.
 */
 void print_to_98(int n)
-{  int n;
-for (n = 0; n <= 98; n++)
+{  int o;
+for (o = 0; o <= 98; o++)
 {
-if (n < 98)
-printf("%d, ", n);
+if (o < 98)
+printf("%d, ", o);
 else
-printf("%d", n);
+printf("%d", o);
 }
 printf("\n");
 printf("98\n");
@@ -45,5 +42,4 @@ else
 printf("%d", d);
 }
 printf("\n");
-return (0);
 }
