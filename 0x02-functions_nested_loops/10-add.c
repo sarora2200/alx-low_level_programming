@@ -6,7 +6,6 @@
  * Return: sum of a & n.
 */
 int add(int a, int n)
-{ int e;
-	e = a + n;
-	_putchar('e');
+{ int e = a + n;
+	return (e);
 }
