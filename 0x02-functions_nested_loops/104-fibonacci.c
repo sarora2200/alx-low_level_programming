@@ -11,13 +11,14 @@
 
 int main(void)
 {   int count;
-unsigned long fib1 = 1, fib2 = 2;
+unsigned long fib1 = 1, fib2 = 2, fib_next;
 printf("%lu, %lu", fib1, fib2);
-for (count = 0; count < 96; count++)
+for (count = 3; count <= 98; count++)
 {
-fib2 += fib1;
-fib1 = fib2 - fib1;
-printf(", %lu", fib2);
+fib_next = fib1 + fib2;
+printf(", %lu", fib_next);
+fib1 = fib2;
+fib2 = fib_next
 }
 printf("\n");
 return (0);
