@@ -18,7 +18,7 @@ for (count = 3; count <= 98; count++)
 fib_next = fib1 + fib2;
 printf(", %lu", fib_next);
 fib1 = fib2;
-fib2 = fib_next
+fib2 = fib_next;
 }
 printf("\n");
 return (0);
