@@ -23,7 +23,7 @@ if (e <= 99)
 _putchar(' ');
 if (e >= 100)
 {
-_putchar('0' + (e / 10));
+_putchar('0' + (e / 100));
 _putchar('0' + (e % 10));
 }
 else if (e <= 99 && e >= 10)
