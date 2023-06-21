@@ -20,5 +20,4 @@ fib2 = sum;
 }
 printf("%lu\n", fib1);
 return (0);
-}
-~       
+} 
