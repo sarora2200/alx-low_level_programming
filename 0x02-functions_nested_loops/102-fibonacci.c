@@ -19,9 +19,9 @@ printf("%lu", sum);
 fib1 = fib2;
 fib2 = sum;
 if (count == 49)
-printf("\n";
+printf("\n");
 else
-printf(", ")
+printf(", ");
 }
 return (0);
 }
