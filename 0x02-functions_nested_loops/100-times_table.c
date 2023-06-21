@@ -24,7 +24,7 @@ _putchar(' ');
 if (e >= 100)
 {
 _putchar('0' + (e / 100));
-_putchar('0' + (e % 10));
+_putchar('0' + (e / 10) % 10);
 }
 else if (e <= 99 && e >= 10)
 _putchar('0' + (e / 10));
