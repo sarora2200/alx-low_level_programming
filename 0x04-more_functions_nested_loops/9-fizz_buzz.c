@@ -18,23 +18,19 @@ int m = i % 3;
 int o = i % 5;
 if (m == 0 && o != 0)
 {
-printf(" Fizz");
+printf("Fizz ");
 }
 else if (o == 0 && m != 0)
 {
-printf(" Buzz");
+printf("Buzz ");
 }
 else if (m == 0 && o == 0)
 {
-printf(" FizzBuzz");
-}
-else if (i == 1);
-{
-printf("%d", i);
+printf("FizzBuzz ");
 }
 else
 {
-printf(" %d", i);
+printf("%d ", i);
 }
 }
 printf("\n");
