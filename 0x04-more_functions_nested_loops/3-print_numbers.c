@@ -6,7 +6,7 @@
  * Return: 0 is (success)
 */
 void print_numbers(void)
-{  int i = {1..9};
+{  int [i] = {1..9};
 _putchar('i');
 _putchar('\n');
 return (0);
