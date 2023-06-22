@@ -11,11 +11,11 @@
 */
 int main(void)
 {
-int n;
-for (n = 1; n <= 100; n++)
+int i;
+for (i = 1; i <= 100; i++)
 {
-int m = n % 3;
-int o = n % 5;
+int m = i % 3;
+int o = i % 5;
 if (m == 0 && o != 0)
 {
 printf(" Fizz");
@@ -30,9 +30,9 @@ printf(" FizzBuzz");
 }
 else
 {
-printf("%d ", n);
+printf(" %d", i);
 }
 }
-printf('\n');
+printf("\n");
 return (0);
 }
