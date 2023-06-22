@@ -28,10 +28,13 @@ else if (m == 0 && o == 0)
 {
 printf("FizzBuzz ");
 }
-else
+else if (i != 100)
 {
 printf("%d ", i);
 }
+else 
+{
+printf("%d"' i);
 printf("\n");
 }
 return (0);
