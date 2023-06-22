@@ -13,7 +13,7 @@ for (e = 0; e <= 14; e++)
 {
 if (e >= 10)
 _putchar(1 + 48);
-_putchar((e % 10) + 48 );
+_putchar((e % 10) + 48);
 }
 _putchar('\n');
 }
