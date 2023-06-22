@@ -14,17 +14,15 @@ int main(void)
 int n;
 for (n = 1; n <= 100; n++)
 {
-int m = n % 3;
-int o = n % 5;
-if (m == 0 && o != 0)
+if (n % 3 == 0 && n % 5 != 0)
 {
 printf(" Fizz");
 }
-else if (o == 0 && m != 0)
+else if (n % 5 == 0 && n % 3 != 0)
 {
 printf(" Buzz");
 }
-else if (m == 0 && o == 0)
+else if (n % 3 == 0 && n % 5 == 0)
 {
 printf(" FizzBuzz");
 }
@@ -33,5 +31,6 @@ else
 printf("%d ", n);
 }
 }
+printf('\n');
 return (0);
 }
