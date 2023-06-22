@@ -28,7 +28,7 @@ else if (m == 0 && o == 0)
 {
 printf("FizzBuzz ");
 }
-else if (i != 100)
+if (i != 100)
 {
 printf("%d ", i);
 }
