@@ -1,28 +1,17 @@
 #include "main.h"
 
 /**
- * _isupper - Entry point
- *
- * Description: function that checks for uppercase character.
+ * _isupper - function that checks for uppercase character.
  *
  * @c: is input character
  *
- * Return: 0 is (success).
+ * Return: 1 if its uppercase, 0 if not
 */
 
-int _isupper(c)
+int _isupper(int c)
 {  if
 (c >= 'A' && c <= 'Z')
-_putchar(c);
-_putchar(':');
-_putchar(' ');
-_putchar(1);
-_putchar('\n');
+return (1);
 else
-_putchar(c);
-_putchar(':');
-_putchar(' ');
-_putchar(0);
-_putchar('\n');
 return (0);
 }
