@@ -4,7 +4,7 @@
  * @s: is input string.
 */
 void rev_string(char *s)
-{ 
+{
 char rev = s[0];
 int e = 0;
 int i;
