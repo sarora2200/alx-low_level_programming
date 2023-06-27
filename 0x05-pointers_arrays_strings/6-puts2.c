@@ -5,10 +5,9 @@
  * @str: is input string.
 */
 void puts2(char *str)
-{  _putchar('0');
-while (*str != '\0')
+{ int i;
+for (i = 0; str[i] != '\0'; str = str + 2)
 {
-str = str + 2;
 _putchar(*str);
 }
 _putchar('\n');
