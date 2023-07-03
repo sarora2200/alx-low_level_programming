@@ -3,7 +3,8 @@
 /**
  * print_diagsums - function that prints the sum of the two diagonals of
  * a square matrix of integers.
- * @a: is input string.
+ * @a: is input matrix.
+ * @size: size of matrix.
 */
 void print_diagsums(int *a, int size)
 {
