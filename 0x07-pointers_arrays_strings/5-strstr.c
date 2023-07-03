@@ -12,8 +12,12 @@ int i;
 int e;
 for (i = 0; haystack[i] != '\0'; i++)
 {
-for (e = 0; needle[e] != '\0' && haystack[i + e] == needle[e]; e++)
-if (needle[e + 1] == '\0')
+for (e = 0; needle[e] != '\0'; e++)
+{
+if (haystack[i + e] != needle[e])
+break;
+}
+if (needle[e] == '\0')
 return (haystack + i);
 }
 return ('\0');
