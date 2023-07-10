@@ -32,11 +32,11 @@ if (is_separator(str[i]))
 {
 if (!is_separator(str[i - 1]))
 {
-int word_length = i - word_start;
-words[word_index] = malloc((word_length + 1) * sizeof(char));
+int last_word_length = i - word_start;
+words[word_index] = malloc((last_word_length + 1) * sizeof(char));
 if (words[word_index] == NULL)
 return (free_words(words, word_index));
-strncpy(words[word_index], str + word_start, word_length);
+strncpy(words[word_index], str + word_start, last_word_length);
 words[word_index][word_length] = '\0';
 word_index++;
 }
@@ -60,7 +60,6 @@ return (c == ' ');
 /**
  * count_words - Counts the number of words in a string.
  * @str: Input string.
- *
  * Return: Number of words.
  */
 int count_words(char *str)
