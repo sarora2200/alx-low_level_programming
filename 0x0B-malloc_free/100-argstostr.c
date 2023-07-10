@@ -18,7 +18,8 @@ int index = 0;
 if (ac == 0 || av == NULL)
 return (NULL);
 for (i = 0; i < ac; i++)
-total_length += strlen(av[i]) + 1;
+total_length += strlen(av[i]);
+total_length += ac;
 concatenated = malloc(total_length *sizeof(char));
 if (concatenated == NULL)
 return (NULL);
