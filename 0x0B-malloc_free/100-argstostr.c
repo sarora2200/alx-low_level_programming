@@ -19,8 +19,8 @@ if (ac == 0 || av == NULL)
 return (NULL);
 for (i = 0; i < ac; i++)
 total_length += strlen(av[i]);
-total_length += ac;
-concatenated = malloc(total_length *sizeof(char));
+total_length += ac; /* Account for the newlines */
+concatenated = malloc((total_length + 1) * sizeof(char));
 if (concatenated == NULL)
 return (NULL);
 for (i = 0; i < ac; i++)
