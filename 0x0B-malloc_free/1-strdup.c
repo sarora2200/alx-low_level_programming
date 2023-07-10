@@ -17,8 +17,9 @@ len = strlen(str) + 1;
 deo = malloc(len *sizeof(char));
 if (deo == NULL)
 return (NULL);
+
 for (i = 0; i < len; i++)
 deo[i] = str[i];
+
 return (deo);
-free(str);
 }
