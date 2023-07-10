@@ -26,7 +26,7 @@ return (NULL);
 for (i = 0; i < len1; i++)
 concatenated[i] = s1[i];
 for (j = 0; j < len2; j++)
-concatenated[i + j] = s2[j];
+concatenated[i++] = s2[j];
 concatenated[i] = '\0';
 return (concatenated);
 }
