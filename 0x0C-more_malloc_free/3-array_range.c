@@ -14,7 +14,7 @@ int i, newmin;
 if (min > max)
 return (NULL);
 newmin = max - min + 1;
-result = malloc(newmin *sizeof(int))
+result = malloc(newmin *sizeof(int));
 if (result == NULL)
 return (NULL);
 for (i = 0; min <= max; i++)
