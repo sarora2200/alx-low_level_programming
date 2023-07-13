@@ -3,10 +3,10 @@
 #include <stdlib.h>
 /**
  * *_memset - fills memory with a constant byte
- * @s: memory area to be filled
- * @b: char to copy
+ * @s: pointer to put the constant
+ * @b: constant
  * @n: number of times to copy b
- * Return: pointer to the memory area s
+ * Return: s
  */
 char *_memset(char *s, char b, unsigned int n)
 {
@@ -17,11 +17,9 @@ return (ptr);
 }
 /**
  * *_calloc - function that allocates memory for an array, using malloc.
- * @nmemb: is input int.
- * @size: is input int.
- * Return:  newly allocated space in memory
- * If nmemb or size is 0, then _calloc returns NULL.
- * If malloc fails, then _calloc returns NULL.
+ * @nmemb: array length.
+ * @size: size of each element.
+ * Return: pointer.
 */
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
