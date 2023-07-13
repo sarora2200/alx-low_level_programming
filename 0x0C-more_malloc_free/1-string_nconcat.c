@@ -21,15 +21,15 @@ for (len1 = 0; s1[len1] != '\0'; len1++)
 	;
 for (len2 = 0; s2[len2] != '\0'; len2++)
 	;
+if (n >= len2)
+len3 = len1 + len2;
+else
+len 3 = len1 + n;
 s3 = malloc((len3 + 1) * sizeof(char));
 if (s3 == NULL)
 {
 return (NULL);
 }
-if (n >= len2)
-len3 = len1 + len2;
-else
-len3 = len1 + n;
 for (i = 0; i < len1; i++)
 {
 s3[i] = s1[i];
