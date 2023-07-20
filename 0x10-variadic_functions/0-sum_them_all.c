@@ -14,5 +14,5 @@ va_start(ptr, n);
 for (i = 0; i < n; i++)
 sum += va_arg(ptr, unsigned int);
 va_end(ptr);
-return sum;
+return (sum);
 }
