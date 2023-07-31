@@ -18,7 +18,7 @@ new_node->next = NULL;
 if (*head == NULL)
 {
 *head = new_node;
-return (new_node) ;
+return (new_node);
 }
 while (last->next != NULL)
 last = last->next;
