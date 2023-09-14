@@ -15,9 +15,9 @@ unsigned int j;
 while (head != NULL)
 {
 if (j == index)
-return (head);
-j++;
+break;
 head = head->next;
+j++;
 }
-return (NULL);
+return (head);
 }
