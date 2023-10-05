@@ -14,9 +14,9 @@
  */
 typedef struct hash_node_s
 {
-     char *key;
-     char *value;
-     struct hash_node_s *next;
+char *key;
+char *value;
+struct hash_node_s *next;
 } hash_node_t;
 
 /**
@@ -29,10 +29,21 @@ typedef struct hash_node_s
  */
 typedef struct hash_table_s
 {
-     unsigned long int size;
-     hash_node_t **array;
+unsigned long int size;
+hash_node_t **array;
 } hash_table_t;
 
+
+/**
+ * struct shash_node_s - Node of a sorted hash table
+ *
+ * @key: The key, string
+ * The key is unique in the HashTable
+ * @value: The value corresponding to a key
+ * @next: A pointer to the next node of the List
+ * @sprev: A pointer to the previous element of the sorted linked list
+ * @snext: A pointer to the next element of the sorted linked list
+ */
 typedef struct shash_node_s
 {
 	char *key;
