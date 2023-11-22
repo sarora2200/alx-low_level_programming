@@ -3,7 +3,7 @@
 
 
 def island_perimeter(grid):
-     """Function to calculate an island described in a grid perimeter
+    """Function to calculate an island described in a grid perimeter
 
     grid is a list of list of integers:
     0 represents a water zone
